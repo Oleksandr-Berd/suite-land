@@ -7,7 +7,7 @@ align-items: center;
 justify-content: space-between;
 
 padding-top: 24px;
-padding-bottom: 56px;
+padding-bottom: 83px;
 padding-left: 16px;
 padding-right: 16px;
 `
