@@ -22,6 +22,7 @@ export const CommonCon = styled.div`
 
     padding-left: 165px;
     padding-right: 165px;
+    padding-bottom: 571px;
   }
 `;
 

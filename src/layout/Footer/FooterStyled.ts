@@ -18,6 +18,10 @@ export const FooterStyled = styled.footer`
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @media (min-width: 1440px){
+    padding-top: 360px;
+  }
 `;
 
 export const Title = styled.h1`
