@@ -15,7 +15,8 @@ export const HeaderStyled = styled.header`
     padding-top: 40px;
     padding-left: 39px;
     padding-right: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 168px;
+
   }
 `;
 

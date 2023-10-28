@@ -3,15 +3,18 @@ import { useMediaQuery } from "usehooks-ts";
 import * as SC from "./IntroStyled";
 
 import { ReactComponent as OvalMob } from "../../assets/images/intro_oval_mob.svg";
+import { ReactComponent as OvalTab } from "../../assets/images/intro_oval_tablet.svg";
 import { ReactComponent as PictureMob } from "../../assets/images/intro_image_mob.svg";
 
+import picTab from "../../assets/images/intro_pic_tablet.svg"
+
 const Intro: React.FC = () => {
-  const isMobile = useMediaQuery("max-width:767px");
+  const isTablet = useMediaQuery("(min-width:768px)");
 
   return (
     <SC.CommonCon>
-      <SC.ContentCon>
-        <OvalMob />
+      <SC.ContentCon introPic={picTab}>
+        {isTablet ? <OvalTab /> : <OvalMob />}
         <SC.Title>
           A <span>super solution</span> for your <span>business.</span>
         </SC.Title>

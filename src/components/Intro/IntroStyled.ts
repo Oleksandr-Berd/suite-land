@@ -1,5 +1,9 @@
 import styled from "@emotion/styled";
 
+type Props = {
+    introPic: string,
+}
+
 export const CommonCon = styled.div`
   padding-left: 16px;
   padding-right: 16px;
@@ -8,10 +12,12 @@ export const CommonCon = styled.div`
   @media (min-width: 768px) {
     padding-left: 39px;
     padding-bottom: 273px;
+
+   
   }
 `;
 
-export const ContentCon = styled.div`
+export const ContentCon = styled.div<Props>`
   position: relative;
 
   & > svg {
@@ -19,13 +25,23 @@ export const ContentCon = styled.div`
     top: 0;
     right: 0;
 
-    transform: translateY(-25px) translateX(-38px);
+    transform: translateY(-45px) translateX(-118px);
   }
 
   @media (min-width: 768px) {
     width: 573px;
 
     text-align: left;
+
+    &::after {
+      content: url(${(props) => props.introPic});
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -5;
+
+      transform: translateX(115px) translateY(-100px);
+    }
   }
 `;
 
@@ -94,11 +110,23 @@ export const AdvList = styled.ul`
   margin-top: 56px;
 
   text-align: center;
+
+  @media (min-width: 768px){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 `;
 
 export const AdvItem = styled.li`
   &:not(:last-child) {
     margin-bottom: 32px;
+
+    @media (min-width: 768px){
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
   }
 `;
 
