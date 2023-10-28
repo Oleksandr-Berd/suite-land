@@ -11,7 +11,7 @@ export const CommonCon = styled.div`
 
   @media (min-width: 768px) {
     padding-left: 39px;
-    padding-bottom: 273px;
+    padding-bottom: 493px;
 
    
   }

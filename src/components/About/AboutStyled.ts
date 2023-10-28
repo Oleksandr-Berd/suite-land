@@ -5,7 +5,7 @@ type Props = {
 }
 
 export const CommonCon = styled.div<Props>`
-position: relative;
+  position: relative;
 
   padding-top: 261px;
   padding-bottom: 64px;
@@ -16,6 +16,8 @@ position: relative;
 
   background-color: #172339;
 
+  border-radius: 15px;
+
   &::before {
     content: url(${(props) => props.aboutPic});
 
@@ -24,6 +26,21 @@ position: relative;
     left: 0;
 
     transform: translateY(-180px);
+
+    @media (min-width: 768px) {
+      transform: translateX(220px) translateY(-180px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transform: translateY(1000px);
+
+    margin-left: 39px;
+    margin-right: 40px;
   }
 `;
 
@@ -35,7 +52,11 @@ export const Title = styled.h2`
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: -0.42px;
-  font-weight: bold;
+  font-weight: normal;
+
+  & > span{
+    font-weight: bold;
+  }
 `;
 
 export const Text = styled.p`

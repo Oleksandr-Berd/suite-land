@@ -6,6 +6,10 @@ export const FooterStyled = styled.footer`
 
   text-align: center;
   background-color: #f3ede7;
+
+  @media (min-width: 768px){
+    padding-top: 536px;
+  }
 `;
 
 export const Title = styled.h1`
