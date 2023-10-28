@@ -4,6 +4,11 @@ export const CommonCon = styled.div`
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 237px;
+
+  @media (min-width: 768px) {
+    padding-left: 39px;
+    padding-bottom: 273px;
+  }
 `;
 
 export const ContentCon = styled.div`
@@ -15,6 +20,12 @@ export const ContentCon = styled.div`
     right: 0;
 
     transform: translateY(-25px) translateX(-38px);
+  }
+
+  @media (min-width: 768px) {
+    width: 573px;
+
+    text-align: left;
   }
 `;
 
@@ -30,6 +41,16 @@ export const Title = styled.h2`
   & > span {
     font-weight: bold;
   }
+
+  @media (min-width: 768px) {
+    width: 500px;
+
+    margin-bottom: 40px;
+
+    font-size: 56px;
+    line-height: 1.14;
+    letter-spacing: -0.78px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -39,6 +60,12 @@ export const Paragraph = styled.p`
   font-size: 16px;
   line-height: 1.75;
   letter-spacing: 0.09px;
+
+  @media (min-width: 768px) {
+    width: 350px;
+
+    margin-bottom: 40px;
+  }
 `;
 
 export const LinkCon = styled.div`
@@ -57,28 +84,31 @@ export const LinkCon = styled.div`
 
   & > a {
     color: #faf8f6;
+    font-size: 18px;
+    line-height: 1.78;
+    letter-spacing: -0.18px;
   }
 `;
 
 export const AdvList = styled.ul`
-margin-top: 56px;
+  margin-top: 56px;
 
-text-align: center;
-`
+  text-align: center;
+`;
 
 export const AdvItem = styled.li`
-&:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 32px;
-}
-`
+  }
+`;
 
 export const AdvTitle = styled.h3`
-margin-bottom: 1px;
+  margin-bottom: 1px;
 
-font-size: 48px;
-line-height: 1.67;
-font-weight: bold;
-`
+  font-size: 48px;
+  line-height: 1.67;
+  font-weight: bold;
+`;
 
 export const AdvText = styled.p`
   font-size: 16px;
@@ -86,4 +116,10 @@ export const AdvText = styled.p`
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #49566d;
+`;
+
+export const PictureCon = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
