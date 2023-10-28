@@ -7,8 +7,16 @@ export const FooterStyled = styled.footer`
   text-align: center;
   background-color: #f3ede7;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
     padding-top: 536px;
+    padding-bottom: 72px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 `;
 
@@ -22,7 +30,6 @@ export const Title = styled.h1`
 `;
 
 export const Copyright = styled.p`
-
   margin-bottom: 33px;
 
   color: #49566d;
@@ -32,14 +39,14 @@ export const Copyright = styled.p`
 `;
 
 export const SocNetList = styled.ul`
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const SocNetItem = styled.li`
-&:not(:last-child){
+  &:not(:last-child) {
     margin-right: 28px;
-}
-`
+  }
+`;
