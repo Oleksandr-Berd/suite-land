@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 
 type Props = {
-    introPic: string,
-}
+  introPic: string;
+};
 
 export const CommonCon = styled.div`
   padding-left: 16px;
@@ -12,8 +12,16 @@ export const CommonCon = styled.div`
   @media (min-width: 768px) {
     padding-left: 39px;
     padding-bottom: 493px;
+  }
 
-   
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 165px;
+    padding-right: 165px;
   }
 `;
 
@@ -26,6 +34,10 @@ export const ContentCon = styled.div<Props>`
     right: 0;
 
     transform: translateY(-45px) translateX(-118px);
+
+    @media (min-width: 1440px) {
+      transform: translateY(-45px) translateX(0px);
+    }
   }
 
   @media (min-width: 768px) {
@@ -41,6 +53,10 @@ export const ContentCon = styled.div<Props>`
       z-index: -5;
 
       transform: translateX(115px) translateY(-100px);
+
+      @media (min-width: 1440px) {
+        transform: translateX(260px) translateY(-100px);
+      }
     }
   }
 `;
@@ -67,6 +83,14 @@ export const Title = styled.h2`
     line-height: 1.14;
     letter-spacing: -0.78px;
   }
+
+  @media (min-width: 1440px) {
+    width: 635px;
+
+    font-size: 72px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -81,6 +105,13 @@ export const Paragraph = styled.p`
     width: 350px;
 
     margin-bottom: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 52px;
+
+    font-size: 18px;
+    line-height: 1.78;
   }
 `;
 
@@ -111,11 +142,17 @@ export const AdvList = styled.ul`
 
   text-align: center;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: column;
+
+    margin: 0;
   }
 `;
 
@@ -123,9 +160,14 @@ export const AdvItem = styled.li`
   &:not(:last-child) {
     margin-bottom: 32px;
 
-    @media (min-width: 768px){
-        margin-bottom: 0;
-        margin-right: 10px;
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 63px;
+      margin-right: 0;
     }
   }
 `;

@@ -4,17 +4,21 @@ import * as SC from "./IntroStyled";
 
 import { ReactComponent as OvalMob } from "../../assets/images/intro_oval_mob.svg";
 import { ReactComponent as OvalTab } from "../../assets/images/intro_oval_tablet.svg";
+import { ReactComponent as OvalDesk } from "../../assets/images/intro_oval_desk.svg";
+
 import { ReactComponent as PictureMob } from "../../assets/images/intro_image_mob.svg";
 
 import picTab from "../../assets/images/intro_pic_tablet.svg"
+import picDesk from "../../assets/images/intro_pic_desk.svg"
 
 const Intro: React.FC = () => {
   const isTablet = useMediaQuery("(min-width:768px)");
+  const isDesktop = useMediaQuery("(min-width:1440px)")
 
   return (
     <SC.CommonCon>
-      <SC.ContentCon introPic={picTab}>
-        {isTablet ? <OvalTab /> : <OvalMob />}
+      <SC.ContentCon introPic={isDesktop ? picDesk : picTab}>
+        {isDesktop ? <OvalDesk /> : isTablet ? <OvalTab /> : <OvalMob />}
         <SC.Title>
           A <span>super solution</span> for your <span>business.</span>
         </SC.Title>
