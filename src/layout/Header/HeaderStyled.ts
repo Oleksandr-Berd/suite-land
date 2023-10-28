@@ -16,7 +16,13 @@ export const HeaderStyled = styled.header`
     padding-left: 39px;
     padding-right: 40px;
     padding-bottom: 168px;
+  }
 
+  @media (min-width: 1440px) {
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-top: 50px;
+    padding-bottom: 170px;
   }
 `;
 
@@ -35,7 +41,7 @@ export const LinkCon = styled.div`
   border: 1px solid #172339;
   border-radius: 6px;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -51,6 +57,24 @@ export const LinkCon = styled.div`
       font-size: 16px;
       line-height: 2;
       letter-spacing: -0.16px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    transition: background-color 0.3s ease-in-out;
+
+    & > a {
+      transition: color 0.3s ease-in-out;
+    }
+
+    &:hover {
+      background-color: #172339;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      & > a {
+        color: #faf8f6;
+        transition: color 0.3s ease-in-out;
+      }
     }
   }
 `;
