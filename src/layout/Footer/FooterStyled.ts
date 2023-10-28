@@ -21,6 +21,8 @@ export const FooterStyled = styled.footer`
 
   @media (min-width: 1440px){
     padding-top: 360px;
+    padding-left: 167px;
+    padding-right: 167px;
   }
 `;
 
@@ -31,6 +33,10 @@ export const Title = styled.h1`
   font-weight: bold;
   font-size: 32;
   letter-spacing: -0.44px;
+
+  @media (min-width: 768px){
+    margin: 0;
+  }
 `;
 
 export const Copyright = styled.p`
@@ -40,6 +46,9 @@ export const Copyright = styled.p`
   font-size: 15px;
   line-height: 2.14;
   letter-spacing: 0.08px;
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 `;
 
 export const SocNetList = styled.ul`

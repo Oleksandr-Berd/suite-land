@@ -136,6 +136,14 @@ export const LinkCon = styled.div`
     line-height: 1.78;
     letter-spacing: -0.18px;
   }
+
+  @media (min-width: 1440px) {
+    &:hover {
+      background: linear-gradient(to right, #a060ff, #cb30e3, #ffa84e);
+      cursor: pointer;
+      
+    }
+  }
 `;
 
 export const AdvList = styled.ul`
